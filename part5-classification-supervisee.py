@@ -139,7 +139,7 @@ print()
 print('Matrice de confusion :')
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
-pred = knn.predict(X_test)
+pred = clf.predict(X_test)
 print(confusion_matrix(y_test, pred))
 print(classification_report(y_test, pred))
 ############################################################################
